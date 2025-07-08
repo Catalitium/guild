@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <meta name="description" content="Knowledge Portal - Explore AI, Automation, Chemistry, Databases, Engineering, and Mathematics" />
+  <meta name="keywords" content="knowledge, AI, automation, chemistry, databases, engineering, mathematics, learning" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Knowledge Portal" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>Guild of Knowledge</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <div class="dictionary-container">
+    <header class="portal-header">
+      <div class="header-top">
+        <h1 class="portal-title">Guilds</h1>
+        <button class="language-toggle" title="Cambiar idioma / Change language">
+          <span class="flag-emoji">🇪🇸</span>
+        </button>
+      </div>
+      <p class="portal-subtitle">Enter the Matrix of Knowledge</p>
+    </header>
+    
+    <!-- Quick Navigation Bar for Mobile -->
+    <nav class="quick-nav" id="quickNav">
+      <button class="quick-nav-btn" onclick="scrollToTop()">↑ Top</button>
+      <button class="quick-nav-btn" onclick="toggleMatrix()">🌊 Matrix</button>
+      <button class="quick-nav-btn" onclick="sharePage()">📤 Share</button>
+    </nav>
+    
+    <nav class="knowledge-grid">
+      <div class="knowledge-card" data-category="ai">
+        <a href="topics/ArtificialIntelligence/index.html">
+          <div class="card-icon">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Machine learning, neural networks, and AI systems</p>
+          <div class="card-badge">AI</div>
+        </a>
+      </div>
+      
+      <div class="knowledge-card" data-category="automation">
+        <a href="topics/automation/index.html">
+          <div class="card-icon">⚙️</div>
+          <h3>Automation</h3>
+          <p>Process automation and workflow optimization</p>
+          <div class="card-badge">Auto</div>
+        </a>
+      </div>
+      
+      <div class="knowledge-card" data-category="chemistry">
+        <a href="topics/chemistry/index.html">
+          <div class="card-icon">🧪</div>
+          <h3>Chemistry</h3>
+          <p>Chemical reactions, compounds, and molecular science</p>
+          <div class="card-badge">Chem</div>
+        </a>
+      </div>
+      
+      <div class="knowledge-card" data-category="databases">
+        <a href="topics/databases/index.html">
+          <div class="card-icon">🗄️</div>
+          <h3>Databases</h3>
+          <p>Data storage, management, and query systems</p>
+          <div class="card-badge">DB</div>
+        </a>
+      </div>
+      
+      <div class="knowledge-card" data-category="engineering">
+        <a href="topics/engineering/index.html">
+          <div class="card-icon">🔧</div>
+          <h3>Engineering</h3>
+          <p>Technical design, systems, and problem-solving</p>
+          <div class="card-badge">Eng</div>
+        </a>
+      </div>
+      
+      <div class="knowledge-card" data-category="mathematics">
+        <a href="topics/mathematics/index.html">
+          <div class="card-icon">📐</div>
+          <h3>Mathematics</h3>
+          <p>Numbers, equations, and mathematical concepts</p>
+          <div class="card-badge">Math</div>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 Matrix Rain Knowledge Portal. All rights reserved.</p>
+    <p class="footer-subtitle">Powered by the Matrix</p>
+    <div class="footer-links">
+      <a href="#" onclick="showAbout()">About</a> • 
+      <a href="#" onclick="showContact()">Contact</a> • 
+      <a href="#" onclick="showPrivacy()">Privacy</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
